@@ -22,5 +22,5 @@ module.exports = function (file, opts, cb) {
 
 var tty = require('tty');
 function setRaw (mode) {
-    (process.stdin.setRawMode || tty.setRawMode)(mode);
+    (process.stdin.setRawMode || tty.setRawMode).call(process.stdin, mode)
 }
