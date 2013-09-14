@@ -1,16 +1,15 @@
 {
     "name" : "editor",
-    "version" : "0.0.4",
+    "version" : "0.0.5",
     "description" : "launch $EDITOR in your program",
     "main" : "index.js",
-    "bin" : {},
     "directories" : {
         "example" : "example",
         "test" : "test"
     },
     "dependencies" : {},
     "devDependencies" : {
-        "tap" : "~0.2.5"
+        "tap" : "~0.4.4"
     },
     "scripts" : {
         "test" : "tap test/*.js"
