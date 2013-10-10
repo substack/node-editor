@@ -39,6 +39,16 @@ Launch the `$EDITOR` (or `opts.editor`) for `file`.
 
 When the editor exits, `cb(code, sig)` fires.
 
+File name is always last parameter for editor process. You can pass additional 
+command line arguments to your editor with `opts.args`:
+
+```
+var editor = require('editor');
+editor('beep.json', {editor: 'vim', args: ['--noplugin']}, function (code, sig) {
+    console.log('finished editing with code ' + code);
+});
+```
+
 install
 =======
 
