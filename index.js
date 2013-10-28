@@ -9,9 +9,11 @@ module.exports = function (file, opts, cb) {
     
     var ed = /^win/.test(process.platform) ? 'notepad' : 'vim';
     var editor = opts.editor || process.env.VISUAL || process.env.EDITOR || ed;
-    
+    var args = editor.split(/\s+/);
+    var bin = args.shift();
+
     setRaw(true);
-    var ps = spawn(editor, [ file ], { customFds : [ 0, 1, 2 ] });
+    var ps = spawn(bin, args.concat([ file ]), { customFds : [ 0, 1, 2 ] });
     
     ps.on('exit', function (code, sig) {
         setRaw(false);
