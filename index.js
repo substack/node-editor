@@ -11,18 +11,10 @@ module.exports = function (file, opts, cb) {
     var editor = opts.editor || process.env.VISUAL || process.env.EDITOR || ed;
     var args = editor.split(/\s+/);
     var bin = args.shift();
-
-    setRaw(true);
-    var ps = spawn(bin, args.concat([ file ]), { customFds : [ 0, 1, 2 ] });
+    
+    var ps = spawn(bin, args.concat([ file ]), { stdio: 'inherit' });
     
     ps.on('exit', function (code, sig) {
-        setRaw(false);
-        process.stdin.pause();
         if (typeof cb === 'function') cb(code, sig)
     });
 };
-
-var tty = require('tty');
-function setRaw (mode) {
-    process.stdin.setRawMode ? process.stdin.setRawMode(mode) : tty.setRawMode(mode);
-}
