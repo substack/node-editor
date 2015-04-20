@@ -1,6 +1,6 @@
 {
     "name" : "editor",
-    "version" : "0.0.1",
+    "version" : "1.0.0",
     "description" : "launch $EDITOR in your program",
     "main" : "index.js",
     "directories" : {
