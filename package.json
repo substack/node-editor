@@ -7,7 +7,11 @@
         "example" : "example",
         "test" : "test"
     },
-    "dependencies" : {},
+    "dependencies" : {
+        "async": "^1.2.1",
+        "errno-codes": "^1.0.2",
+        "underscore": "^1.8.3"
+    },
     "devDependencies" : {
         "tap" : "~0.4.4"
     },
