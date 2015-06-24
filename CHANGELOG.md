@@ -1,3 +1,14 @@
+:package: patch v1.1.1
+
+```
+test release. .. : )
+```
+
+Commits history, use them to write useful release log.
+
+* [[d35d516dd7](https://github.com/maboiteaspam/editors/commit/d35d516dd7) - minor v1.1.0 (clement) 
+
+
 :package: minor v1.1.0
 
 ```
