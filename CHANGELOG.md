@@ -1,3 +1,14 @@
+:package: patch v1.1.3
+
+```
+test release.
+```
+
+Commits history, use them to write useful release log.
+
+* [[ca554b8c2b](https://github.com/maboiteaspam/editors/commit/ca554b8c2b) - :package: patch v1.1.2 (clement) 
+
+
 :package: patch v1.1.2
 
 ```
