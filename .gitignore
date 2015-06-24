@@ -29,3 +29,7 @@ build/Release
 node_modules
 
 
+
+.local.json
+
+.idea/

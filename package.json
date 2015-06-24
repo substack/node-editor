@@ -1,38 +1,41 @@
 {
-    "name" : "editor",
-    "version" : "1.0.0",
-    "description" : "launch $EDITOR in your program",
-    "main" : "index.js",
-    "directories" : {
-        "example" : "example",
-        "test" : "test"
-    },
-    "dependencies" : {
-        "async": "^1.2.1",
-        "errno-codes": "^1.0.2",
-        "underscore": "^1.8.3"
-    },
-    "devDependencies" : {
-        "tap" : "~0.4.4"
-    },
-    "scripts" : {
-        "test" : "tap test/*.js"
-    },
-    "repository" : {
-        "type" : "git",
-        "url" : "git://github.com/substack/node-editor.git"
-    },
-    "homepage" : "https://github.com/substack/node-editor",
-    "keywords" : [
-        "text",
-        "edit",
-        "shell"
-    ],
-    "author" : {
-        "name" : "James Halliday",
-        "email" : "mail@substack.net",
-        "url" : "http://substack.net"
-    },
-    "license" : "MIT",
-    "engine" : { "node" : ">=0.6" }
+  "name": "editors",
+  "version": "1.1.0",
+  "description": "attempts to launch a text editor in your program, it will always prefer $EDITOR, but knows a little more :)",
+  "main": "index.js",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "async": "^1.2.1",
+    "errno-codes": "^1.0.2",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "tap": "~0.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maboiteaspam/node-editor.git"
+  },
+  "homepage": "https://github.com/maboiteaspam/node-editor",
+  "keywords": [
+    "text",
+    "edit",
+    "shell",
+    "gui"
+  ],
+  "author": "maboiteaspam",
+  "contributors": [
+    {
+      "name": "James Halliday",
+      "email": "mail@substack.net",
+      "url": "http://substack.net"
+    }
+  ],
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.6"
+  }
 }
