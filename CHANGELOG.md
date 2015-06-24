@@ -1,39 +1,6 @@
 :package: patch v1.1.3
 
 ```
-test release.
-```
-
-Commits history, use them to write useful release log.
-
-* [[ca554b8c2b](https://github.com/maboiteaspam/editors/commit/ca554b8c2b) - :package: patch v1.1.2 (clement) 
-
-
-:package: patch v1.1.2
-
-```
-test release.
-```
-
-Commits history, use them to write useful release log.
-
-* [[827bc1b4c1](https://github.com/maboiteaspam/editors/commit/827bc1b4c1) - :package: patch v1.1.1 (clement) 
-
-
-:package: patch v1.1.1
-
-```
-test release. .. : )
-```
-
-Commits history, use them to write useful release log.
-
-* [[d35d516dd7](https://github.com/maboiteaspam/editors/commit/d35d516dd7) - minor v1.1.0 (clement) 
-
-
-:package: minor v1.1.0
-
-```
 Fork original repo to editors
 Improved out-of-the-box support for linux & windows systems.
 Windows editors: notepad++, notepad
