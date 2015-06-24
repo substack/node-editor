@@ -1,3 +1,13 @@
+:package: patch v1.1.4
+
+```
+test release.
+```
+
+Commits history
+
+* [[26aa636027](https://github.com/maboiteaspam/editors/commit/26aa636027) - clean changelog (clement) 
+
 :package: patch v1.1.3
 
 ```
