@@ -15,6 +15,10 @@ module.exports = function (file, opts, cb) {
     var ps = spawn(bin, args.concat([ file ]), { stdio: 'inherit' });
     
     ps.on('exit', function (code, sig) {
-        if (typeof cb === 'function') cb(code, sig)
+        if (typeof cb === 'function') cb(code, sig);
+    });
+
+    ps.on('error', function(err) {
+        if (typeof cb === 'function') cb(err.code === 'ENOENT' ? 127 : 1, null);
     });
 };
