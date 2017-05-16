@@ -17,4 +17,6 @@ module.exports = function (file, opts, cb) {
     ps.on('exit', function (code, sig) {
         if (typeof cb === 'function') cb(code, sig)
     });
+
+    return ps;
 };
