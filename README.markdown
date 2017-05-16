@@ -8,11 +8,8 @@ example
 
 ``` js
 var editor = require('editor');
-var process = editor('beep.json', function (code, sig) {
+editor('beep.json', function (code, sig) {
     console.log('finished editing with code ' + code);
-});
-process.on('error', function (error) {
-    console.log('something went wrong: ' + error);
 });
 ```
 
